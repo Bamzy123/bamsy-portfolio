@@ -25,6 +25,7 @@ export const Route = createFileRoute("/")({
 const stack = [
   "Java", "Spring Boot", "Python", "Django",
   "Node.js", "Express.js", "JavaScript", "React.js", "Next.js",
+   "React Native", "Vue",
 ];
 
 function Home() {
@@ -44,9 +45,9 @@ function Home() {
               Software Engineer building <span className="text-gradient">products that solve real problems</span>.
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              I'm Stephen Omotoso — a fullstack developer with 3+ years of experience across EdTech,
+              I'm Stephen Omotoso — a fullstack developer with 5 years of experience across EdTech,
               the creator economy, and institutional platforms. I write clean, maintainable code in
-              Java, Python, Node.js and React.
+              Java(SpingBoot), Python, Node.js, React Native and React.Js.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
@@ -80,8 +81,8 @@ function Home() {
           <div className="grid gap-6 md:grid-cols-3">
             <Highlight
               icon={<Code2 className="size-5" />}
-              title="3+ Years Shipping"
-              body="Production fullstack apps across Java/Spring Boot, Django, Express, React and Next.js."
+              title="5 Years Shipping"
+              body="Production fullstack apps across Java/Spring Boot, Django, Express, React Native, React and Next.js."
             />
             <Highlight
               icon={<Sparkles className="size-5" />}

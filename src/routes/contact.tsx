@@ -28,7 +28,7 @@ const channels = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+234 916 108 4583",
+    value: "+234 916 108 4583 or +234 901 661 4219",
     href: "tel:+2349161084583",
   },
   {
@@ -100,7 +100,9 @@ function Contact() {
           <p className="text-muted-foreground">Prefer email? Just hit the button.</p>
           <a
             href="mailto:stephenomotos@gmail.com"
-            className="mt-5 inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity shadow-glow"
+            className="mt-5 inline-flex items-center gap-2 px-6 py-3
+             rounded-md bg-primary text-primary-foreground font-medium
+              hover:opacity-90 transition-opacity shadow-glow"
           >
             <Mail className="size-4" /> Send an email
           </a>

@@ -13,7 +13,7 @@ export const Route = createFileRoute("/about")({
           "Fullstack Software Engineer based in Lagos, Nigeria. Experience across Java, Python, Node.js, React and teaching at NextGen Africa.",
       },
       { property: "og:title", content: "About — Stephen Omotoso" },
-      { property: "og:description", content: "3+ years building full-stack web applications and mentoring developers." },
+      { property: "og:description", content: "5 years building full-stack web applications and mentoring developers." },
     ],
   }),
   component: About,
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/about")({
 const skills = {
   Languages: ["Java", "Python", "JavaScript"],
   Backend: ["Spring Boot", "Django", "Express.js"],
-  Frontend: ["React.js", "Next.js"],
+  Frontend : ["React.js", "Next.js", "React Native", "Vue"],
   Tools: ["Git", "GitHub", "Postman", "VS Code"],
 };
 
@@ -30,7 +30,7 @@ const experiences = [
   {
     role: "Software Engineer Tutor",
     company: "NextGen Africa",
-    period: "January 2026 – April 2026",
+    period: "January 2026 - April 2026",
     blurb:
       "NextGen Africa is a technical institution where students learn software development, AI automation, product design, cybersecurity, and digital business skills.",
     bullets: [
@@ -42,7 +42,7 @@ const experiences = [
   {
     role: "Fullstack Developer",
     company: "Freelance / Self-Employed",
-    period: "2022 – Present",
+    period: "2022 - Present",
     blurb:
       "Independently designed, built, and deployed full-stack web applications for clients and personal projects, covering both backend and frontend development.",
     bullets: [
@@ -65,7 +65,7 @@ function About() {
             Engineer, builder, and educator.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Software Engineer with 3+ years of experience building full-stack web applications across
+            Software Engineer with 5 years of experience building full-stack web applications across
             EdTech, creator economy, and institutional platforms. I take pride in writing clean,
             maintainable code and enjoy working on products that solve real problems. Also experienced
             in technical education, having trained aspiring developers in a structured bootcamp
@@ -136,7 +136,7 @@ function About() {
                 National Open University of Nigeria (NOUN), Lagos
               </p>
               <p className="mt-1 font-mono text-xs text-muted-foreground">
-                2022 – Present · Currently in Third Year, Second Semester
+                2022 - Present · Currently in Final Year.
               </p>
             </div>
           </div>
