@@ -23,7 +23,7 @@ const projects = [
   {
     name: "Faveclub",
     role: "Fullstack Developer",
-    tagline: "Artist–Fan Royalty Platform",
+    tagline: "Artist-Fan Royalty Platform",
     description:
       "Built a platform that enables artists to connect directly with their fans and share a percentage of their royalties as a sign of appreciation — creating a new model for fan engagement and artist support.",
     link: "https://faveclub.netlify.app",
