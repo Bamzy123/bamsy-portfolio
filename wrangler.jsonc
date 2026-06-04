@@ -16,6 +16,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "bamsy-portfolio",
+  "account_id": "55f7379b1ae2012c42fabe778fb35759",
   "compatibility_date": "2026-05-13",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry"
