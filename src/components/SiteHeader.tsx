@@ -17,8 +17,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <Avatar className="size-8">
-            <AvatarImage src="/profile.jpg" alt="Stephen Omotoso" />
+          <Avatar className="w-8 h-8 md:w-10 md:h-10">
+            <AvatarImage src="/profile.jpg" alt="Stephen Omotoso" className="object-cover" />
             <AvatarFallback>S</AvatarFallback>
           </Avatar>
           <span className="font-mono text-sm tracking-tight">stephen.dev</span>

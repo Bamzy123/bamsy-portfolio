@@ -1,0 +1,9 @@
+HOW TO DEPLOY THIS PROJECT...
+npx wrangler deploy.
+
+HOW TO BUILD THIS PROJECT...
+npx wrangler build.
+npm run build.
+
+HOW TO RUN THIS PROJECT...
+npm run dev.
