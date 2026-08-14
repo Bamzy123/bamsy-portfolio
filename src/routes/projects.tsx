@@ -30,6 +30,24 @@ const projects = [
     tags: ["Fullstack", "Creator Economy"],
   },
   {
+    name: "PushnDeliver Rider",
+    role: "Backend / Mobile Integration",
+    tagline: "On-demand Goods Delivery App",
+    description:
+      "Backend and API integration work for a delivery app handling order processing, real-time tracking, rider assignment, and mobile backend flows.",
+    link: "https://play.google.com/store/apps/details?id=com.pushndeliver.pndrider",
+    tags: ["Mobile", "Logistics"],
+  },
+  {
+    name: "Skippa Rider",
+    role: "Backend / Mobile Integration",
+    tagline: "Ride-Hailing Mobile App",
+    description:
+      "Contributed backend and API integration supporting ride booking, live trip data, driver-rider matching, and trip history management.",
+    link: "https://play.google.com/store/apps/details?id=com.linq.skipparider",
+    tags: ["Mobile", "Ride-Hailing"],
+  },
+  {
     name: "NextGen Africa Website",
     role: "Contributor",
     tagline: "Institutional Platform",

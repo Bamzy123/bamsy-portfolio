@@ -20,36 +20,40 @@ export const Route = createFileRoute("/about")({
 });
 
 const skills = {
-  Languages: ["Java", "Python", "JavaScript"],
-  Backend: ["Spring Boot", "Django", "Express.js"],
-  Frontend : ["React.js", "Next.js", "React Native", "Vue"],
-  Tools: ["Git", "GitHub", "Postman", "VS Code"],
+  Languages: ["JavaScript (ES6+)", "TypeScript", "Java", "Python"],
+  Backend: ["Node.js (Express.js)", "Spring Boot", "Django", "REST APIs", "Microservices"],
+  Frontend: ["Angular", "React.js", "Next.js", "React Native"],
+  Databases: ["MongoDB", "PostgreSQL", "MySQL"],
+  Cloud: ["AWS (EC2, S3, Lambda, RDS)", "Docker", "CI/CD", "Netlify", "Vercel"],
+  Blockchain: ["SUI Blockchain", "On-chain integrations"],
+  Tools: ["Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA"],
 };
 
 const experiences = [
   {
     role: "Software Engineer Tutor",
     company: "NextGen Africa",
-    period: "January 2026 - April 2026",
+    period: "Jan 2026 - Apr 2026",
     blurb:
-      "NextGen Africa is a technical institution where students learn software development, AI automation, product design, cybersecurity, and digital business skills.",
+      "NextGen Africa is a technical institution offering training in software engineering, AI automation, cybersecurity, product design, and digital business.",
     bullets: [
-      "Designed and delivered a structured three-month web development curriculum, taking students from fundamentals to building deployable projects.",
-      "Conducted code reviews, debugging sessions, and one-on-one mentorship to ensure every student progressed effectively.",
-      "Helped students understand backend and frontend integration through hands-on project work.",
+      "Designed and delivered a structured three-month backend and fullstack curriculum taking students from fundamentals to deployable projects.",
+      "Provided technical leadership through code reviews, architecture guidance, and one-on-one mentorship.",
+      "Mentored students on API design, database management, authentication systems, and production deployment best practices.",
     ],
   },
   {
-    role: "Fullstack Developer",
+    role: "Backend Engineer / Full-Stack Developer",
     company: "Freelance / Self-Employed",
-    period: "2022 - Present",
+    period: "2020 - Present",
     blurb:
-      "Independently designed, built, and deployed full-stack web applications for clients and personal projects, covering both backend and frontend development.",
+      "Architected and delivered backend systems, RESTful APIs, mobile app integrations, and Web3 integrations for client and personal projects across EdTech, logistics, and the creator economy.",
     bullets: [
-      "Built and shipped production-ready web applications using Java (Spring Boot), Python (Django), Node.js (Express.js), React.js, and Next.js.",
-      "Designed and implemented RESTful APIs, database schemas, and frontend interfaces across multiple projects.",
-      "Managed end-to-end project delivery — from architecture and development to deployment and maintenance.",
-      "Worked across EdTech and creator economy domains, building platforms that serve real users.",
+      "Designed and built RESTful APIs using Node.js (Express.js), implemented JWT authentication, middleware architecture, and production-grade error handling.",
+      "Integrated SUI blockchain into fullstack platforms handling on-chain interactions, wallet logic, and transaction flows.",
+      "Architected and optimised MongoDB databases, designed schemas, and implemented indexing strategies.",
+      "Deployed services to cloud infrastructure (AWS, Netlify), ensuring uptime, scalability, and security in production.",
+      "Contributed backend and API integration work for two live mobile apps on Google Play Store (PushnDeliver, Skippa Rider).",
     ],
   },
 ];
@@ -62,15 +66,15 @@ function About() {
         <header className="max-w-3xl">
           <p className="font-mono text-xs text-primary uppercase tracking-widest">About</p>
           <h1 className="mt-3 text-4xl md:text-5xl font-bold">
-            Engineer, builder, and educator.
+            Backend Engineer · Full-Stack Developer
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Software Engineer with 5 years of experience building full-stack web applications across
-            EdTech, creator economy, and institutional platforms. I take pride in writing clean,
-            maintainable code and enjoy working on products that solve real problems. Also experienced
-            in technical education, having trained aspiring developers in a structured bootcamp
-            environment. Currently pursuing a B.Sc. in Information Technology while continuing to
-            build and ship meaningful software.
+            Backend Engineer with 5 years of experience designing and shipping scalable, secure,
+            production-grade backend systems across EdTech, logistics, creator economy, and Web3.
+            Proficient in Node.js, Java, and Python with hands-on experience in RESTful API design,
+            MongoDB & SQL databases, JWT authentication, microservices patterns, AWS deployments,
+            and SUI blockchain integrations. Passionate about maintainable code and reliable
+            production systems.
           </p>
         </header>
 

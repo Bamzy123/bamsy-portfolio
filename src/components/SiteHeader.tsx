@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const links = [
   { to: "/", label: "Home" },
@@ -34,12 +34,39 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <a
-          href="mailto:stephenomotos@gmail.com"
-          className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
-        >
-          Hire me
-        </a>
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="tel:+2349161084583"
+            className="size-9 grid place-items-center rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            aria-label="Phone"
+          >
+            <Phone className="size-4" />
+          </a>
+          <a
+            href="https://github.com/Bamzy123"
+            target="_blank"
+            rel="noreferrer"
+            className="size-9 grid place-items-center rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            aria-label="GitHub"
+          >
+            <Github className="size-4" />
+          </a>
+          <a
+            href="https://linkedin.com/in/omotoso-stephen-298010273"
+            target="_blank"
+            rel="noreferrer"
+            className="size-9 grid place-items-center rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="size-4" />
+          </a>
+          <a
+            href="mailto:stephenomotos@gmail.com"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            Hire me
+          </a>
+        </div>
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setOpen((v) => !v)}
