@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Code2, GraduationCap, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,6 +63,16 @@ function Home() {
               >
                 Get in touch
               </Link>
+            </div>
+            <div className="mt-12 md:absolute md:top-20 md:right-6 lg:right-12">
+              <div className="hidden md:block">
+                <div className="w-44 h-44 rounded-full overflow-hidden border-4 border-border shadow-card">
+                  <Avatar className="w-44 h-44">
+                    <AvatarImage src="/profile.jpg" alt="Stephen Omotoso" className="object-cover" />
+                    <AvatarFallback>SO</AvatarFallback>
+                  </Avatar>
+                </div>
+              </div>
             </div>
             <div className="mt-12 flex flex-wrap gap-2">
               {stack.map((s) => (

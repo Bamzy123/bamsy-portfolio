@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Briefcase, GraduationCap, Languages } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -63,19 +64,25 @@ function About() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
       <main className="flex-1 mx-auto max-w-5xl px-6 py-16 md:py-24">
-        <header className="max-w-3xl">
-          <p className="font-mono text-xs text-primary uppercase tracking-widest">About</p>
-          <h1 className="mt-3 text-4xl md:text-5xl font-bold">
-            Backend Engineer · Full-Stack Developer
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Backend Engineer with 5 years of experience designing and shipping scalable, secure,
-            production-grade backend systems across EdTech, logistics, creator economy, and Web3.
-            Proficient in Node.js, Java, and Python with hands-on experience in RESTful API design,
-            MongoDB & SQL databases, JWT authentication, microservices patterns, AWS deployments,
-            and SUI blockchain integrations. Passionate about maintainable code and reliable
-            production systems.
-          </p>
+        <header className="max-w-3xl flex items-start gap-6">
+          <div className="hidden sm:block">
+            <Avatar className="w-20 h-20">
+              <AvatarImage src="/profile.jpg" alt="Stephen Omotoso" className="object-cover" />
+              <AvatarFallback>SO</AvatarFallback>
+            </Avatar>
+          </div>
+          <div>
+            <p className="font-mono text-xs text-primary uppercase tracking-widest">About</p>
+            <h1 className="mt-3 text-4xl md:text-5xl font-bold">Backend Engineer · Full-Stack Developer</h1>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              Backend Engineer with 5 years of experience designing and shipping scalable, secure,
+              production-grade backend systems across EdTech, logistics, creator economy, and Web3.
+              Proficient in Node.js, Java, and Python with hands-on experience in RESTful API design,
+              MongoDB & SQL databases, JWT authentication, microservices patterns, AWS deployments,
+              and SUI blockchain integrations. Passionate about maintainable code and reliable
+              production systems.
+            </p>
+          </div>
         </header>
 
         {/* Skills */}

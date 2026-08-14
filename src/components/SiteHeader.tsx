@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const links = [
   { to: "/", label: "Home" },
@@ -16,9 +17,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <span className="size-8 rounded-md bg-gradient-primary grid place-items-center text-primary-foreground font-mono font-bold text-sm shadow-glow transition-transform group-hover:scale-110">
-            S
-          </span>
+          <Avatar className="size-8">
+            <AvatarImage src="/profile.jpg" alt="Stephen Omotoso" />
+            <AvatarFallback>S</AvatarFallback>
+          </Avatar>
           <span className="font-mono text-sm tracking-tight">stephen.dev</span>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
